@@ -1,0 +1,28 @@
+.item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  max-width: 300px;
+}
+.name {
+  font-weight: bold;
+}
+.number {
+  color: #555;
+}
+
+.delBtn {
+  min-width: 80px;
+  padding: 10px 0;
+  border: none;
+  background-color: burlywood;
+  border-radius: 4px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.icon {
+  margin-right: 5px;
+}
