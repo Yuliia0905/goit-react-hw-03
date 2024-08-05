@@ -6,15 +6,15 @@ const phoneRegExp = /^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}$/;
 
 const ContactsValidationSchema = Yup.object().shape({
   name: Yup.string()
-    .required("Ім'я контакту є обов'язковим")
-    .min(3, "Ім'я контакту має бути мінімум 3 символи")
-    .max(50, "Ім'я контакту має бути меншим за 50 символів"),
+    .required('Name is required')
+    .min(3, 'Name must have min 3 characters')
+    .max(50, 'Contact name must be less than 50 characters'),
   number: Yup.string()
     .matches(
       phoneRegExp,
-      "Номер телефону має співпадати з форматом 'xxx-xxx-xx-xx'"
+      "The phone number must match the format 'xxx-xxx-xx-xx'"
     )
-    .required("Номер телефону є обов'язковий"),
+    .required('Phone number is required'),
 });
 
 const ContactForm = ({ onAddContact }) => {
@@ -41,7 +41,7 @@ const ContactForm = ({ onAddContact }) => {
             className={css.input}
             type="text"
             name="name"
-            placeholder="Іван Петров"
+            placeholder="Ivan Petrov"
           />
           <ErrorMessage
             className={css.errorText}

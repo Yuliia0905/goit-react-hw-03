@@ -3,7 +3,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   position: relative;
-  max-width: 300px;
+  min-width: 300px;
 }
 .name {
   font-weight: bold;
@@ -13,14 +13,17 @@
 }
 
 .delBtn {
-  min-width: 80px;
+  min-width: 60px;
   padding: 10px 0;
-  border: none;
-  background-color: burlywood;
+  border: 1px solid red;
+  background-color: rgb(228, 139, 154);
   border-radius: 4px;
   position: absolute;
   top: 15px;
   right: 10px;
+}
+.delBtn:hover {
+  background-color: rgb(221, 70, 95);
 }
 
 .icon {
